@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../과제.html/a.css">
+    <link rel="stylesheet" href="../과제.html/picture/**">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+      var imgs;
+      var img_count;
+      var img_position = 1;
+
+      imgs = $(".slide ul");
+      img_count = imgs.children().length;//이미지 갯수
+
+      $('#back').click(function () {
+        back();
+      });
+      $('#next').click(function () {
+        next();
+      });
+
+      function back() {
+        if(1<img_position){
+          imgs.animate({
+            left:'+=1180px'
+          });
+          img_position--;
+        }
+      }
+      function next() {
+        if(img_count>img_position){
+          imgs.animate({
+            left:'-=1180px'
+          });
+          img_position++;
+        }
+      }
+    });
+</script>
+
+    <style>
+    @media scree and (max-width:1000px){
+
+    } 
+    
+
+    a { text-decoration: none; color: black;
+         }
+    /* header */
+    .wrap{
+        position: relative;
+    }
+    .header{
+        width: 100%;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+        color: black;
+        text-decoration: none; color: black;
+    }
+    .Hleft a, .Hright a{
+        margin-left: 15px;
+    }
+    /* nav */
+    .navi{
+        display: flex;
+        justify-content: space-around;
+        font-size:x-large;
+        font-weight: 800;
+        margin-left: 0px
+    }
+    .nav1 li{
+        list-style-type:none;
+        float:left;
+        margin:30px;
+    }
+    .nav1> ul> li:hover{
+        text-decoration: underline black;
+    }
+    .nav1:hover{
+        text-decoration: underline black;
+    }
+    /* .mainmenu > li{
+        margin-left: 7px;
+    } */
+    .menu{
+        position: relative;
+    }
+    .submenu{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 30px;
+        left: -200px;
+        width: 400px;
+    }
+    .submenu > li{
+        font-size: 13px;
+        font-weight: 100px;
+        padding: 0px;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .submenu li:hover{
+        text-decoration: underline black;
+    }
+    .mueu li{
+        margin: 0px;
+    }
+    .menu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* main */
+    .MAIN{
+        margin-bottom: 50px;
+    }
+    /* 메인1 슬라이드 */
+    .slide{
+    width: 1180px;
+    height: 560px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    }
+    .slide ul{
+      width: 5000px;
+      position: absolute;
+      top:0;
+      left:0;
+      font-size: 0;
+    }
+    .slide ul li{
+      display: inline-block;
+        padding: 0;
+    }
+    .Img1{
+           width: 100%;
+       }
+    #back{
+      position: absolute;
+      top: 250px;
+      left: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+    #next{
+      position: absolute;
+      top: 250px;
+      right: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+    /* 애니메이션 */
+    .box{
+        position: absolute;
+        top:500px;
+        width:700px;
+        height: 130px;
+        border: 2px solid red;
+        z-index: 10;
+        
+    }
+    /* 메인2 */
+    .main2{
+        margin-bottom:80px;
+        padding-top:200px ;
+    }
+    .chance{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        
+    }
+    .chance img{
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+                    
+    }
+    .p1, .p2, .p3{
+        text-align:center;
+        padding: 20px;;
+        font-size: 15px;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    .p1:hover, .p2:hover, .p3:hover{
+        text-decoration: underline;
+        
+    }
+    /* 메인3 */
+    .main3{
+        width: 1200px;
+        margin-bottom: 80px;
+    }
+    .contents{
+        margin-left: 170px;
+    }
+    .picture{
+        display:inline-block;
+        padding-left: 10px;
+    }
+    /* 메인4 */
+    .main4{
+        width: 1000px;
+        height: 100px;
+        padding-left:50px;
+        margin: auto;
+    }
+    .main4 li{ 
+        float:left;
+        margin-left: 10px;
+        margin: auto;
+       
+    }
+    .main4img > li {
+        width: 140px;
+        height: 50px;
+    }
+    
+    /* footer */
+    .Footer{
+         list-style: none;
+         width:1000px;
+         margin: auto;
+         
+    }
+    .foot1{
+        border-bottom: 2px solid black;
+        list-style: none;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .f1left{
+        list-style: none;
+        font-size: 15px;
+         color: black;
+         display: flex;
+    }
+    .f1left > li{
+        margin-left: 10px;
+
+    }
+    .f1right{
+        list-style: none;
+        font-size: 15px;
+         color: black;
+         display: flex;
+    }
+    /* footer2 */
+    .foot2{
+         font-size: xx-small;
+         color:black;
+         display: flex;
+         justify-content:space-between;
+         margin-bottom: 40px;
+    }
+    .company_info li{
+        display: inline;
+        font-size: 14px;
+     
+    }
+    .f2right{
+         float:right;
+         margin-top: 10px;
+    }
+    .select{
+        border-bottom: 3px solid black;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        font-size: large;
+    }
+    .button{
+        font-size: medium;
+        border-radius: 8px;
+        border: 2px solid black;
+    }
+    .button:hover{
+        cursor: pointer;
+    }
+    ul li { list-style-type: none;}
+    ul {
+        padding-left: 0px;
+    }
+/*           이벤트 스타일        */
+
+        .evetmain200{margin-bottom: 0.75em; margin-top: 0.75em;}
+        .evetmain300{text-align: center; padding-right: 0.5em;padding-left: 0.5em;}
+        .evetmain400{padding-right: 0.5em;padding-left: 0.5em;padding-top: 0.5em;}
+        .evetmain500{padding-right: 0.5em;padding-left: 0.5em;}
+
+        /*검색 스타일*/
+        .such010{width: 400px; height: 35px; font-size: small; border: 1px solid rgb(195, 195, 195);}   
+        .such011{padding: 0;}
+        .such012{border-collapse: collapse;}
+        .such020{width: 39px; height: 39px; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;
+                    border: 1px solid rgb(195, 195, 195)}        
+        .such021{width: 25px; height: 25px; border: 0px;}
+        .such022{width: 300px; height: 150px; border: 0px;}
+        /*세부 스타일*/
+        .a001 {text-decoration: none; color: black;}
+        .a002 {text-decoration: none; font-weight: 1000; font-size: small; color: black;}
+        .a003 {font-weight: 500; font-size: small; color: black;}
+        .a004 {text-decoration: none; font-weight: 1000; color: black;}
+
+        /*글자 스타일*/
+        h10{font-size: small; color: gray;}
+        h11{color: black; font-weight: 600;}
+
+        /*이미지 스타일*/
+        .img001{position: relative;}
+        .img002{position: absolute; right: 0.5em;}
+        .img003{position: absolute; right: 0.5em;}
+        .img004{position: absolute; right: 0.5em;}
+
+
+/*                  이벤트 스타일 끝마침                  */
+
+    </style>
+
+
+
+
+<!--                                 시작                        -->
+
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header class="header"> 
+            <!-- 헤더 왼쪽 -->
+            <div class="Hleft">
+                <a href="">PEACOCK</a>
+                <a href="">이마트몰</a>
+                <a href="">신세계포인트</a>
+                <a href="">문화센터</a>
+            </div>
+            <!-- 헤더 오른쪽 -->
+            <div class="Hright">
+                <a href="">MY이마트</a>
+                <a href="">이마트뮤직</a>
+                <a href="">이마트TV</a>
+                <a href="">로그인</a>
+                <a href="">회원가입</a>
+            </div>
+        </header>
+        <!-- 네비게이션 -->
+        <nav class="navi">
+            <div class="nav1">
+                <ul class="mainmenu">
+                    <li><a href="">점포찾기</a></li>
+                    <li><a href="">전단광고</a></li>
+                    <li><img src="./picture/gnb01.png" width="121" height="30" ></li>
+                    <li><a href="">이벤트</a></li>
+                    <li class="menu"><a href="">고객센터</a>
+                        <ul class="submenu" >
+                            <li><a href="이마트 공지사항.html">공지사항</a></li> 
+                            <li><a href="">자주하는질문</a></li> 
+                            <li><a href="">고객문의</a></li>
+                            <li><a href="">고객만족제도</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--이벤트 안내 메인-->
+    <!--이벤트 2page 메인-->
+    
+    <div align="center" class="evetmain200">
+        <table border="0">
+            <tr>
+                <td class="evetmain300"><a class="a001" href="이벤트 0 전체.html">전체</a></td>
+                <td class="evetmain300"><a class="a001" href="이벤트 0-1 안내(수정필요.html">안내</a></td>
+                <td class="evetmain300"><a class="a004" href="이벤트 0-2 진행중(수정필요.html">진행중</a></td>
+                <td class="evetmain300"><a class="a001" href="이벤트 0-3 카드행사(수정필요.html">카드행사</a></td>
+                <td class="evetmain300"><a class="a001" href="이벤트 0-4 당첨발표(수정필요.html">당첨발표</a></td>
+                <td class="evetmain300"><a class="a001" href="이벤트 0-5 기획전(수정필요.html">기획전</a></td>
+            </tr>
+        </table>
+    </div>
+        <!--이벤트 검색하는 창-->
+    <div align="center" class="evetmain200">
+            <table>
+                <tr class="such011">
+                <form>
+                    <td><INPUT class="such010" TYPE="TXET" placeholder="검색어를 입력해주세요"></input></td>
+                    <td><button class="such020"><img class="such021" src="picture/검색아이콘.png"></img></button></td>
+                </form>
+                </tr>
+            </table>
+    </div>
+    <div align="center">
+        <table border="0">
+            <!--1행 이미지-->
+            <tr>
+                <!--1행1열-->
+                <td class="evetmain400">
+                <a class="img001 a001" href=""><img class="such022" src="picture/청정원 퀴즈 이벤트 노출.jpg"><img class="img002" src="picture/이벤트.png"></img></img></a>
+                </td>
+                <!--1행2열-->
+                <td class="evetmain400">
+                <a class="img001 a001" href=""><img class="such022" src="picture/피코크클럽시즌7 노출.jpg"></img><img class="img002" src="picture/이벤트.png"></img></a>
+                <!--1행3열-->
+                <td class="evetmain400">
+                <a class="img001 a001" href=""><img class="such022" src="picture/5월 출석체크 노출.jpg"></img><img class="img002" src="picture/이벤트.png"></img></a>
+                <br>
+                </td>
+            </tr>
+            <!--1행 설명 글-->
+            <tr>
+                <!--1행1열-->
+                <td class="evetmain500"><a class="a002" href="">청정원 퀴즈 이벤트</a>
+                <br><h10>2022.05.19(목)-2022.06.01(수)</h10>
+                <br><a class="a003" href="">자세히 보기 </a><h11>></h11></td>
+                <!--1행2열-->
+                <td class="evetmain500"><a class="a002" href="">피코크클럽 시즌7</a>
+                <br><h10>2022.05.13(금)-2022.07.30(토)</h10>
+                <br>
+                <a class="a003" href="l">자세히 보기 </a><h11>></h11></td>
+                <!--1행3열-->
+                <td class="evetmain500"><a class="a002" href="">[5월출석] 5월 출석체크</a>
+                <br><h10>2022.05.01(일)-2022.05.31(화)</h10>
+                <br>
+                <a class="a003" href="">자세히 보기 </a><h11>></h11></td>
+        </tr>
+        </table>
+        </div>
+        <div>
+            <br><br><br><br><br>
+        </div>
+                                                <!--이벤트 전체 끝마침-->
+            <!-- 메인4 -->
+            <div class="main4">
+                <ul class="main4img">
+                    <li>
+                        <a href="">
+                        <img src="./picture/traders.png">
+                        <div>트레이더스</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./picture/nobrand.png">
+                        <div>노브랜드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./picture/mollys.png">
+                        <div>몰리스</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./picture/elect.png">
+                        <div>일렉트로마트</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./picture/ssg.png">
+                        <div>SSG 마켓</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./picture/toy.png">
+                        <div>토이킹덤</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <img src="./picture/baby.png">
+                        <div>베이비서클</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                    
+        
+        <!-- 푸터 -->
+        <footer div class="Footer">
+            <!-- 푸터1 -->
+            <div class="foot1">
+                <ul class="f1left">
+                    <li><a href=""><b>점포찾기</b></a></li>
+                    <li><a href=""><b>이벤트</b></a></li>
+                    <li><a href=""><b>고객센터</b></a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">자주하는질문</a></li>
+                    <li><a href="">고객문의</a></li>
+                    <li><a href="">고객만족제도</a></li>
+                </ul>
+                <ul class="f1right">
+                    <li><a href="">MY이마트</a></li>&nbsp;&nbsp;
+                    <li><a href="">이마트뮤직</a></li>&nbsp;&nbsp;
+                    <li><a href="">이마트TV</a></li>
+                </ul>
+            </div>
+            <!-- 푸터2 -->
+            <div class="foot2">
+                <span class="f2left" >
+                    <div class="company_info">
+                            <ul>
+                                <li><img src="./picture/gnb01.png" width="60" height="20";></li>
+                                <li>대표자:백소연  서을특별시 성동구 뚝섬로 377</li>
+                            </ul>
+                            <ul>
+                                <li><b>사업자</b>:123-456-78</li>
+                                <li><b>통신판매업 신고번호</b>:제 2011-11</li>
+                            </ul>
+                            <ul>
+                                <li><a herf="">공정거래자율준수프로그램</a></li>
+                                <li><a href="">이용약관</a></li>
+                                <li><a style="color:red;" href="">개인정보처리방침</a></li>
+                                <li><a style="color:red;"href="">영상정보처리기기운영</a></li>
+                                <li><a style="color:red;"href="">관리방침</a></li>
+                            </ul>
+                            <ul style="font-weight: 600 ; font-size: 3px;">
+                                <li><a href="">회사소개</a></li>
+                                <li><a href="">CSR경영</a></li>
+                                <li><a href="">투자자정보(IR)</a></li>
+                                <li><a href="">채용정보</a></li>
+                                <li><a herf="">이마트 신문고</a></li>
+                            </ul>
+                            <ul>
+                            <li>협력회사 상담(상품/임대용)</li>
+                            <li>협력회사(임대갑)</li>
+                            <li>협력회사(MRO)</li>
+                            </ul>
+                        </div>
+                    </span>    
+                    <span class="f2right" style="font-size: 15px;">
+                        <span>
+                            <select name="emart"  class="select">
+                                <option value="family site">FAMILY SITE</option>
+                                <option value="e-mart">이마트회사소개</option>
+                                <option value="point">신세계포인트</option>
+                                <option value="traders">이마트트레이더스</option>
+                                <option value="e-mart mall">이마트몰</option>
+                            </select>
+                        </span>
+                        <span>
+                            <input type="button"  class="button" value="확인"><br>
+                        </span><br>
+                        <div>이마트대표전화:02-123-123</div>
+                        <div>(주)에스에스지닷컴: 1577-1234</div>
+                        <div>신세계포인트:12345-1234</div>
+                        <div>노브랜드 가맹문의:1234-1234</div>
+                        <div><img src="" alt=""></div>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
