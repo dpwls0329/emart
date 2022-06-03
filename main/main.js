@@ -5,6 +5,7 @@ $(document).ready(function(){
 
   imgs = $(".slide ul");
   img_count = imgs.children().length;//이미지 갯수
+  console.log('img count = '+img_count);
 
   $('#back').click(function () {
     back();
@@ -27,6 +28,11 @@ $(document).ready(function(){
         left:'-=1180px'
       });
       img_position++;
+    } else {
+      img_position = 1;
+      imgs.animate({
+        left:'+=3540px'
+      });
     }
   }
 });
