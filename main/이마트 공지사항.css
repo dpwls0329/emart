@@ -1,0 +1,39 @@
+.location{
+    width: 150px; 
+    height:50px; 
+    border: 0;
+}
+.search{
+    width: 511px; 
+    height: 40px;
+    border:0; 
+    padding-top:2; 
+    text-align:center;
+}
+.button1{
+    width:30px; 
+    height:30px; 
+    border:0px 
+}
+table {
+    width: 70%;
+    border-top: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+.top{
+    border-bottom: 3px solid black;
+}
+td {
+    border-bottom: 1px solid #c5bfbf;
+    padding: 10px;
+}
+.num{
+    height:100px
+}
+.locol{
+    height: 50px;
+}
+.black{
+    text-decoration-line:none; 
+    color: black;
+}

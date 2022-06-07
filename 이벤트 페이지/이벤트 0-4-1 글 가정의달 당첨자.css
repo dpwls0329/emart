@@ -1,0 +1,75 @@
+/*기본 스타일*/
+.body001{
+    margin-left: 0;
+    margin-right: 0; 
+}
+/*테이블 마진 스타일*/
+.tablemrg001{
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+.tablemrg002{
+    margin-left: 10%; 
+    margin-right: 5%;
+}
+
+/*테이블 부분 스타일*/
+.tablemrg110{
+    margin-right: 5em;
+}
+.tablemrg120{
+    border-top: 2px solid #444444;
+}
+
+/*폰트 스타일*/
+.fontd100{
+    text-align: left; 
+    font-size: 15px; 
+    line-height: 300%;
+}
+.fontd200{
+    color:gray; 
+    font-size: 12px; 
+    text-align: left; 
+    line-height: 200%;
+}
+.fontd300{
+    font-size: 13px; 
+    font-weight: 1000;
+}
+/*폰트 부분 스타일*/
+.fontd110{
+    text-align: left; 
+    font-size: 15px; 
+    font-weight: 800; 
+    line-height: 120%; 
+    text-decoration-line: underline;
+}
+.fontd120{
+    text-align: left; 
+    font-size: 15px; 
+    font-weight: 800; 
+    color: brown;
+}
+.fontd130{
+    text-align: left; 
+    font-size: 15px; 
+    font-weight: 800; 
+}
+.a001 {
+    text-decoration: none; 
+    color: black;
+}
+
+/*box 스타일*/
+.fontd140{
+    text-align: center; 
+    text-decoration: none; 
+    padding: .5em 2em .10em; 
+    width: 500px; 
+}
+.fontd150{
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: 800;
+}
