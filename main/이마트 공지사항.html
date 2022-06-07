@@ -33,14 +33,14 @@
                 <ul class="mainmenu">
                     <li><a href="https://store.emart.com/branch/list.do?trcknCode=header_store">점포찾기</a></li>
                     <li><a href="https://store.emart.com/news/leaflet.do?trcknCode=header_leaflet">전단광고</a></li>
-                    <li><a href="./emart-메인 최종.html">
+                    <li><a href="../main/emart-메인 최종.html">
                             <img src="../picture/gnb01.png" width="121" height="30" >
                         </a>
                     </li>
                     <li><a href="../이벤트 페이지/이벤트 0 전체.html">이벤트</a></li>
-                    <li class="menu"><a href="이마트 공지사항.html">고객센터</a>
-                        <ul class="submenu" >
-                            <li><a href="이마트 공지사항.html">공지사항</a></li> 
+                    <li class="menu"><a href="../main/이마트 공지사항.html">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="../main/이마트 공지사항.html">공지사항</a></li> 
                             <li><a href="https://store.emart.com/faq/faq.do?trcknCode=header_faq">자주하는질문</a></li> 
                             <li><a href="https://store.emart.com/customer/consultIntro.do">고객문의</a></li>
                             <li><a href="https://store.emart.com/service/service01.do?trcknCode=header_service">고객만족제도</a></li>
@@ -49,231 +49,249 @@
                 </ul>
             </div>
         </nav>
-        <div align="center">
-            <br>
-                <h2 class="title">공지사항</h2>
-            <br>
-            <table border="0">
-                <tr>
-                    <th>
-                        <select name="subjects" class="location">
-                            <option value="1" selected>전체지역</option>
-                            <option value="2">서울</option>
-                            <option value="3">인천</option>
-                            <option value="4">경기</option>
-                            <option value="5">대전</option>
-                            <option value="6">세종</option>
-                            <option value="7">충북</option>
-                            <option value="8">충남</option>
-                            <option value="9">대구</option>
-                            <option value="10">경북</option>
-                            <option value="11">경남</option>
-                            <option value="12">울산</option>
-                            <option value="13">부산</option>
-                            <option value="14">광주</option>
-                            <option value="15">전북</option>
-                            <option value="16">전남</option>
-                            <option value="17">강원</option>
-                            <option value="18">제주</option>
-                        </select>
-                    </th>
-                    <th>
-                        <select name="subjects" class="location">
-                            <option value="1"><selected></selected>전체점포</option>
-                            <option value="2">노브랜드 울산달통점</option>
-                            <option value="3">노브랜드 울산무거점</option>
-                            <option value="4">노브랜드 울산방어점</option>
-                            <option value="5">노브랜드 울산범서점</option>
-                            <option value="6">노브랜드 울산성남점</option>
-                            <option value="7">노브랜드 울산신천점</option>
-                            <option value="8">노브랜드 울산유곡점</option>
-                            <option value="9">노브랜드 울산점</option>
-                        </select>
-                    </th>
-                    <th>
-                        <input type="text" class="search" placeholder="검색어를 입력해주세요" required>
-                    </th>
-                    <th>
-                        <button class=""><img src="../picture/search.png" class="button1" ></button>
-                    </th>
+    <div align="center">
+      <h2 class="title">공지사항</h2>
+        <Br>
+            
+        <table border="0">
+            <tr>
+                <th>
+            <select name="subjects" class="location">
+                <option value="1" selected>전체지역</option>
+                <option value="2">서울</option>
+                <option value="3">인천</option>
+                <option value="4">경기</option>
+                <option value="5">대전</option>
+                <option value="6">세종</option>
+                <option value="7">충북</option>
+                <option value="8">충남</option>
+                <option value="9">대구</option>
+                <option value="10">경북</option>
+                <option value="11">경남</option>
+                <option value="12">울산</option>
+                <option value="7">부산</option>
+                <option value="8">광주</option>
+                <option value="9">전북</option>
+                <option value="10">전남</option>
+                <option value="11">강원</option>
+                <option value="12">제주</option>
+                </select>
+                </th>
+                <th>
+                    <select name="subjects" class="location">
+                    <option value="1"><selected></selected>전체점포</option>
+                    <option value="2">노브랜드 울산달통점</option>
+                    <option value="3">노브랜드 울산무거점</option>
+                    <option value="4">노브랜드 울산방어점</option>
+                    <option value="5">노브랜드 울산범서점</option>
+                    <option value="6">노브랜드 울산성남점</option>
+                    <option value="7">노브랜드 울산신천점</option>
+                    <option value="8">노브랜드 울산유곡점</option>
+                    <option value="8">노브랜드 울산점</option>
+            </select>
+                </th>
+                <th>
+                <input type="text" class="search" placeholder="검색어를 입력해주세요" required></input>
+                </th>
+                <th><button rows="0" cols="0"><img src="../picture/search.png" class="button1"></img></button></th>
                 </tr>
-            </table>
-        
-            <div class="board-list">
-                <table border="0">
-                    <colgroup>
-                        <col style="width:200px;">
-                        <col style="width:200px;">
-                        <col style="width:500px;">
-                        <col style="height:200px">
-                    </colgroup>
-                    <thead>
-                        <tr class="top">
-                            <th scope="col" class="num num1">번호</th>
-                            <th scope="col" class="local num1">구분</th>
-                            <th scope="col" class="content num1">제목</th>
-                            <th scope="col" class="date num1">게시일</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="notice">
-                            <td class="num">1<i class="ico notice" aria-label="주요 공지"></i></td>
-                            <td class="local"()>전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43303&searchArea=&searchJijumId=&searchTitle=);" class="black">이마트 사칭 사이트 주의안내</a>
-                                <span class="ico-new">
-                                    <span class="hide">
-                                    </span>
-                                </span>
-                            </td>
-                            <td class="date">2022.04.21</td>
-                        </tr>
-                        <tr>
-                            <td class="num">2</td>
-                            <td class="local">전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43587&searchArea=&searchJijumId=&searchTitle=');" class="black">리뷰 대상상품 확대 및 e머니 적립금액 변경 공지</a> 
-                            </td>
-                            <td class="date">2022.05.13</td>
-                        </tr>
-                        <tr>
-                            <td class="num">3</td>
-                            <td class="local">전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43575&searchArea=&searchJijumId=&searchTitle='');" class="black">평범함을 거부한 매운 비빔면 2종, 이마트 단독 기획!</a> 
-                            </td>
-                            <td class="date">2022.05.05</td>
-                        </tr>
-                        <tr>
-                            <td class="num">4</td>
-                            <td class="local">전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43540&searchArea=&searchJijumId=&searchTitle=');" class="black" >취향대로 골라먹는 비빔면의 계절!</a> 
-                            </td>
-                            <td class="date">2022.05.04</td>
-                        </tr>        
-                        <tr>
-                            <td class="num">5</td>
-                            <td class="local">전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43540&searchArea=&searchJijumId=&searchTitle=');" class="black">취향대로 골라먹는 비빔면의 계절!</a> 
-                            </td>
-                            <td class="date">2022.05.04</td>
-                        </tr>
-                        <tr>
-                            <td class="num">6</td>
-                            <td class="local">전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43130&searchArea=&searchJijumId=&searchTitle=');" class="black">이마트 52주 안전·보건관리 로드맵</a> 
-                            </td>
-                            <td class="date">2022.04.06</td>
-                        </tr>
-                        <tr>
-                            <td class="num">7</td>
-                            <td class="local">전점</td>
-                            <td class="content">
-                                <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=42149&searchArea=&searchJijumId=&searchTitle=');" class="black">무료주차권 발급방식 변경 안내</a> 
-                            </td>
-                            <td class="date">2021.12.28</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <br>
-            <br>
-        
-            <div class="paging t_center">
-                <a href="#" class="pre_link  disable black" title="이전페이지로 가기" onclick="return false;">
-                    <span class="hide">◀◀&nbsp;&nbsp;</span>
-                </a>
+        </table>
+
+    <div class="board-list">
+        <table border="0">
+            <caption>
+            </caption>
+            <colgroup>
+                <col style="width:200px;"></col>
+                <col style="width:200px;"></col>
+                <col style="width:500px;"></col>
+                <col style="height:200px"></col>
+            </colgroup>
+            <thead>
+            <tr class="top">
+                <th scope="col" class="num num1">번호</th>
+                <th scope="col" class="local num1">구분</th>
+                <th scope="col" class="content num1">제목</th>
+                <th scope="col" class="date num1">게시일</th>
+            </tr>
+            </thead>
+            <tbody>
             
-                <a href="#" class="ini_link  disable black" onclick="return false;">
-                    <span class="hide">◀&nbsp;&nbsp;</span>
-                </a>
+            <tr>
+            </tr><tr class="notice">
+                <td class="num">1<i class="ico notice" aria-label="주요 공지"></i></td>
+                <td class="local"style="height:50px" ()>    
+                           전점                   
+                </td>
+                <td class="content">
+                    <a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43303&searchArea=&searchJijumId=&searchTitle=);"style="text-decoration-line:none; color: black;">이마트 사칭 사이트 주의안내</a>
+                    
+                    <span class="ico-new"><span class="hide"></span></span>
+                </td>
+                <td class="date">2022.04.21</td>
+            </tr>
             
-                <span class="d-paginate-list">
-                    <a href="#" class="" title="현재페이지" class="black" onclick="return false;">1</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://store.emart.com/news/notice_list.do" class="black" title="6페이지로 가기">2</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://store.emart.com/news/notice_list.do"class="black" title="7페이지로 가기">3</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://store.emart.com/news/notice_list.do" class="black" title="8페이지로 가기">4</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://store.emart.com/news/notice_list.do"class="black" title="9페이지로 가기">5</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                </span>
-                <a href="https://store.emart.com/news/notice_list.do;" class="next_link black">&nbsp;&nbsp;▶</a>
+            
+            <tr>
+                <td class="num">2</td>
+                <td class="local"style="height:50px">                
+                   전점               
+                </td>
+                
+                <td class="content"><a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43587&searchArea=&searchJijumId=&searchTitle=');"style="text-decoration-line:none; color: black;">리뷰 대상상품 확대 및 e머니 적립금액 변경 공지</a> </td>
+                <td class="date">2022.05.13</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">3</td>
+                <td class="local"style="height:50px">
+                       전점       
+                </td>
+                
+                <td class="content"><a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43575&searchArea=&searchJijumId=&searchTitle='');"style="text-decoration-line:none; color: black;">평범함을 거부한 매운 비빔면 2종, 이마트 단독 기획!</a> </td>
+                <td class="date">2022.05.05</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">4</td>
+                <td class="local"style="height:50px">
+                       전점
+                </td>
+                
+                <td class="content"><a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43540&searchArea=&searchJijumId=&searchTitle=');"style="text-decoration-line:none; color: black;">취향대로 골라먹는 비빔면의 계절!</a> </td>
+                <td class="date">2022.05.04</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">5</td>
+                <td class="local"style="height:50px">
+                       전점
+                </td>
+                
+                <td class="content"><a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43540&searchArea=&searchJijumId=&searchTitle=');"style="text-decoration-line:none; color: black;">취향대로 골라먹는 비빔면의 계절!</a> </td>
+                <td class="date">2022.05.04</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">6</td>
+                <td class="local"style="height:50px">
+                       전점
+                </td>
+                
+                <td class="content"><a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=43130&searchArea=&searchJijumId=&searchTitle=');"style="text-decoration-line:none; color: black;">이마트 52주 안전·보건관리 로드맵</a> </td>
+                <td class="date">2022.04.06</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">7</td>
+                <td class="local"style="height:50px">
+                       전점
+                </td>
+                
+                <td class="content"><a href="https://store.emart.com/news/notice_view.do?currentPage=1&rowsPerPage=10&seq=42149&searchArea=&searchJijumId=&searchTitle=');"style="text-decoration-line:none; color: black;">무료주차권 발급방식 변경 안내</a> </td>
+                <td class="date">2021.12.28</td>
+            </tr>
+            <!-- //loop -->
+            
+            </tbody>
+        </table>
+    </div>
+
+<div class="paging t_center" style="margin: 30px 0px 30px 0px;">
+
+    <a href="#" class="pre_link  disable" class="black" title="이전페이지로 가기" onclick="return false;"><span class="hide">◀◀&nbsp;&nbsp;</span></a>
+    
+        <a href="#" class="ini_link  disable" class="black" onclick="return false;"><span class="hide">◀&nbsp;&nbsp;</span></a>
+    
+        <span class="d-paginate-list" >
+                 <a href="#" class="" title="현재페이지"style="text-decoration-line:none; color: black;" onclick="return false;">1</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://store.emart.com/news/notice_list.do"class="black" title="6페이지로 가기">2</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://store.emart.com/news/notice_list.do"class="black" title="7페이지로 가기">3</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://store.emart.com/news/notice_list.do"class="black" title="8페이지로 가기">4</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://store.emart.com/news/notice_list.do"class="black" title="9페이지로 가기">5</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+                 <a href="https://store.emart.com/news/notice_list.do;" class="next_link black">&nbsp;&nbsp;▶</span></a>
                 <a href="https://store.emart.com/news/notice_list.do);" class="end_link black"><span class="hide">&nbsp;&nbsp;▶▶</span></a>
             </div>
-        </div>
-        <!-- 푸터 -->
-        <footer div class="Footer">
-            <!-- 푸터1 -->
-            <div class="foot1">
-                <ul class="f1left">
-                    <li><a href="https://store.emart.com/branch/list.do"><b>점포찾기</b></a></li>
-                    <li><a href="../이벤트 페이지/이벤트 0 전체.html"><b>이벤트</b></a></li>
-                    <li><a href="../main/이마트 공지사항.html"><b>고객센터</b></a></li>
-                    <li><a href="../main/이마트 공지사항.html">공지사항</a></li>
-                    <li><a href="https://store.emart.com/faq/faq.do?trcknCode=header_faq">자주하는질문</a></li>
-                    <li><a href="https://store.emart.com/customer/consultIntro.do">고객문의</a></li>
-                    <li><a href="https://store.emart.com/service/service01.do?trcknCode=header_service">고객만족제도</a></li>
-                </ul>
-                <ul class="f1right">
-                    <li><a href="../로그인1.html">MY이마트</a></li>&nbsp;&nbsp;
-                    <li><a href="https://store.emart.com/music/main.do">이마트뮤직</a></li>&nbsp;&nbsp;
-                    <li><a href="https://store.emart.com/emartTV/eTVcontentsMain.do">이마트TV</a></li>
-                </ul>
             </div>
-            <!-- 푸터2 -->
-            <div class="foot2">
-                <span class="f2left" >
-                    <div class="company_info">
-                        <ul>
-                            <li><img src="../picture/gnb01.png" width="60" height="20";></li>
-                            <li>대표자:강희석  서을특별시 성동구 뚝섬로 377</li>
-                        </ul>
-                        <ul>
-                            <li><b>사업자</b>:123-456-78</li>
-                            <li><b>통신판매업 신고번호</b>:제 2011-11</li>
-                        </ul>
-                        <ul>
-                            <li><a herf="https://store.emart.com/member/justice_business.do">공정거래자율준수프로그램</a></li>
-                            <li><a href="https://store.emart.com/member/agreement.do">이용약관</a></li>
-                            <li><a style="color:red;" href="https://store.emart.com/member/personal_info_20220517.do">개인정보처리방침</a></li>
-                            <li><a style="color:red;"href="https://store.emart.com/member/processing_info20220119.do">영상정보처리기기운영</a></li>
-                            <li><a style="color:red;"href="https://store.emart.com/member/processing_info20220119.do">관리방침</a></li>
-                        </ul>
-                        <ul style="font-weight: 600 ; font-size: 3px; margin-top:30px;">
-                            <li><a href="https://company.emart.com/ko/main.do">회사소개</a></li>
-                            <li><a href="https://company.emart.com/ko/ethic/summary.do">CSR경영</a></li>
-                            <li><a href="https://company.emart.com/ko/investor/main.do">투자자정보(IR)</a></li>
-                            <li><a href="https://career.emart.com/?lang=ko">채용정보</a></li>
-                            <li><a herf="https://company.emart.com/ko/ethic/counsel_intro.do">이마트 신문고</a></li>
-                        </ul>
-                        <ul>
+            <!-- 푸터 -->
+            <footer div class="Footer">
+                <!-- 푸터1 -->
+                <div class="foot1">
+                    <ul class="f1left">
+                        <li><a href="https://store.emart.com/branch/list.do"><b>점포찾기</b></a></li>
+                        <li><a href="../이벤트 페이지/이벤트 0 전체.html"><b>이벤트</b></a></li>
+                        <li><a href="../main/이마트 공지사항.html"><b>고객센터</b></a></li>
+                        <li><a href="../main/이마트 공지사항.html">공지사항</a></li>
+                        <li><a href="https://store.emart.com/faq/faq.do?trcknCode=header_faq">자주하는질문</a></li>
+                        <li><a href="https://store.emart.com/customer/consultIntro.do">고객문의</a></li>
+                        <li><a href="https://store.emart.com/service/service01.do?trcknCode=header_service">고객만족제도</a></li>
+                    </ul>
+                    <ul class="f1right">
+                        <li><a href="../로그인1.html" onclick="window.open(this.href,'로그인','resizavle,width=480px,height=650px');return false">MY이마트</a></li>&nbsp;&nbsp;
+                        <li><a href="https://store.emart.com/music/main.do">이마트뮤직</a></li>&nbsp;&nbsp;
+                        <li><a href="https://store.emart.com/emartTV/eTVcontentsMain.do">이마트TV</a></li>
+                    </ul>
+                </div>
+                <!-- 푸터2 -->
+                <div class="foot2">
+                    <span class="f2left" >
+                        <div class="company_info">
+                            <ul>
+                                <li><img src="../picture/gnb01.png" width="60" height="20";></li>
+                                <li>대표자:강희석  서을특별시 성동구 뚝섬로 377</li>
+                            </ul>
+                            <ul>
+                                <li><b>사업자</b>:123-456-78</li>
+                                <li><b>통신판매업 신고번호</b>:제 2011-11</li>
+                            </ul>
+                            <ul>
+                                <li><a herf="https://store.emart.com/member/justice_business.do">공정거래자율준수프로그램</a></li>
+                                <li><a href="https://store.emart.com/member/agreement.do">이용약관</a></li>
+                                <li><a style="color:red;" href="https://store.emart.com/member/personal_info_20220517.do">개인정보처리방침</a></li>
+                                <li><a style="color:red;"href="https://store.emart.com/member/processing_info20220119.do">영상정보처리기기운영</a></li>
+                                <li><a style="color:red;"href="https://store.emart.com/member/processing_info20220119.do">관리방침</a></li>
+                            </ul>
+                            <ul style="font-weight: 600 ; font-size: 3px; margin-top:30px;">
+                                <li><a href="https://company.emart.com/ko/main.do">회사소개</a></li>
+                                <li><a href="https://company.emart.com/ko/ethic/summary.do">CSR경영</a></li>
+                                <li><a href="https://company.emart.com/ko/investor/main.do">투자자정보(IR)</a></li>
+                                <li><a href="https://career.emart.com/?lang=ko">채용정보</a></li>
+                                <li><a herf="https://company.emart.com/ko/ethic/counsel_intro.do">이마트 신문고</a></li>
+                            </ul>
+                            <ul class="partner">
                             <li>협력회사 상담(상품/임대용)</li>
                             <li>협력회사(임대갑)</li>
                             <li>협력회사(MRO)</li>
-                        </ul>
-                    </div>
-                </span>    
-                <span class="f2right" style="font-size: 15px;">
-                    <span>
-                        <select name="emart"  class="select">
-                            <option value="family site">FAMILY SITE</option>
-                            <option value="e-mart">이마트회사소개</option>
-                            <option value="point">신세계포인트</option>
-                            <option value="traders">이마트트레이더스</option>
-                            <option value="e-mart mall">이마트몰</option>
-                        </select>
+                            </ul>
+                        </div>
+                    </span>    
+                    <span class="f2right" style="font-size: 12px;">
+                        <span>
+                            <select name="emart"  class="select">
+                                <option value="family site">FAMILY SITE</option>
+                                <option value="e-mart">이마트회사소개</option>
+                                <option value="point">신세계포인트</option>
+                                <option value="traders">이마트트레이더스</option>
+                                <option value="e-mart mall">이마트몰</option>
+                            </select>
+                        </span>
+                        <span>
+                            <input type="button"  class="button" value="확인"><br>
+                        </span><br>
+                        <div style="margin-bottom:12px;">이마트대표전화:02-123-123</div>
+                        <div style="margin-bottom:12px;">(주)에스에스지닷컴: 1577-1234</div>
+                        <div>신세계포인트:12345-1234</div>
+                        <span>노브랜드 가맹문의:1234-1234</span>
+                        <sapn><img src="../picture/logo.png" style="width:40px; height:30px; display: inline;"></span>
                     </span>
-                    <span>
-                        <input type="button"  class="button" value="확인"><br>
-                    </span><br>
-                    <div>이마트대표전화:02-123-123</div>
-                    <div>(주)에스에스지닷컴: 1577-1234</div>
-                    <div>신세계포인트:12345-1234</div>
-                    <div>노브랜드 가맹문의:1234-1234</div>
-                    <div><img src="" alt=""></div>
-                </span>
-            </div>
-        </footer>
-    </body>	
+                </div>
+            </footer>
+        </div>
+    </body>   
 </html>
